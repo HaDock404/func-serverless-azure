@@ -32,6 +32,7 @@ def func_serverless_app(req: func.HttpRequest) -> func.HttpResponse:
     blob_data = blob_client.download_blob().readall()
 
     # Charger les données à partir du fichier .pkl
+    # nothing change
     df = pickle.loads(blob_data)
     testY = user_id
     testZ = int(testY)
